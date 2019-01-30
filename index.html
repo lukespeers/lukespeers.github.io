@@ -22,8 +22,47 @@
 						<header>
 							<span class="avatar"><img src="images/lisa_luke_bw_small.jpg" alt="" /></span>
 							<h1>Luke Speers</h1>
-							<p>Musician, Developer, Entrapreneur</p>
+							<p>Musician, Developer, Entrepreneur</p>
+							<p>Welcome to my personal page.</p>
 						</header>
+
+
+						<ul class="actions stacked">
+							<li><a href="https://www.benhudsonmusic.com/" class="button" 
+									onclick=" window.open('https://www.benhudsonmusic.com/', '_blank'); return false;">Ben Hudson Music</a></li>
+							<li><a href="https://soundcloud.com/geoff-holt-1/" class="button" 
+								onclick=" window.open('https://soundcloud.com/geoff-holt-1/', '_blank'); return false;">Orangabang Band</a></li>
+							<li><a href="#" class="button">Full Band Kareoke</a></li>
+							<li><a href="#" class="button">Luke Speers DJ'ing</a></li>
+						</ul>
+
+						<ul id="myUL">
+								<li><span class="caret">Uxbridge Bands</span>
+								  <ul class="nested">
+									<li class="button" onclick=" window.open('https://www.benhudsonmusic.com/', '_blank'); return false;">1985</li>
+									<li class="button" onclick=" window.open('https://www.benhudsonmusic.com/', '_blank'); return false;">852</li>
+									<li class="button" onclick=" window.open('https://www.benhudsonmusic.com/', '_blank'); return false;">Leah Daniels</li>
+									<li class="button" onclick=" window.open('https://www.benhudsonmusic.com/', '_blank'); return false;">Orangabang</li>
+									<li class="button" onclick=" window.open('https://www.benhudsonmusic.com/', '_blank'); return false;">Days of York</li>
+									</ul>
+								</li>
+									
+									
+									<li><span class="caret">Uxbridge Musical Events</span>
+									  <ul class="nested">
+										<li>Spring Tide</li>
+										<li>Hits Fest</li>
+									  </ul>
+									</li>
+								  </ul>
+								</li>
+							  </ul>
+							</ul>
+						 
+				
+
+
+						
 						<!--
 						<hr />
 						<h2>Extra Stuff!</h2>
@@ -63,9 +102,9 @@
 						-->
 						<footer>
 							<ul class="icons">
-								<li><a href="#" class="fa-twitter">Twitter</a></li>
-								<li><a href="#" class="fa-instagram">Instagram</a></li>
-								<li><a href="#" class="fa-facebook">Facebook</a></li>
+								<!-- <li><a href="#" class="fa-twitter">Twitter</a></li> -->
+								<li><a href="https://www.instagram.com/lukespeersmusic/" class="fa-instagram">Instagram</a></li>
+								<!-- <li><a href="#" class="fa-facebook">Facebook</a></li> -->
 							</ul>
 						</footer>
 					</section>
@@ -84,6 +123,18 @@
 				if ('addEventListener' in window) {
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+
+
+				
+				var toggler = document.getElementsByClassName("caret");
+				var i;
+
+				for (i = 0; i < toggler.length; i++) {
+				toggler[i].addEventListener("click", function() {
+					this.parentElement.querySelector(".nested").classList.toggle("active");
+					this.classList.toggle("caret-down");
+				});
 				}
 			</script>
 
