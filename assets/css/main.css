@@ -946,6 +946,21 @@
 			opacity: 0;
 		}
 
+
+		#content {
+			-moz-align-self: -moz-flex-end;
+			-webkit-align-self: -webkit-flex-end;
+			-ms-align-self: -ms-flex-end;
+			align-self: flex-end;
+			width: 100%;
+			padding: 1.5em 0 0 0;
+			color: rgba(255, 255, 255, 0.75);
+			cursor: default;
+			text-align: left;
+		}
+
+
+
 /* Footer */
 
 	#footer {
@@ -1033,12 +1048,18 @@
 /* Remove default bullets */
 ul, #myUL {
 	list-style-type: none;
+	text-align: left;
   }
+.nested {
+	text-align: center;
+}
   
   /* Remove margins and padding from the parent ul */
   #myUL {
 	margin: 0;
 	padding: 0;
+	font-weight: bolder;
+	text-align: left;
   }
   
   /* Style the caret/arrow */
@@ -1068,4 +1089,6 @@ ul, #myUL {
   /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
   .active {
 	display: block;
+	text-align: center;
+	font-weight: bold;
   }
