@@ -1051,7 +1051,8 @@ ul, #myUL {
 	text-align: left;
   }
 .nested {
-	text-align: center;
+	text-indent: 5;
+	text-align: left;
 }
   
   /* Remove margins and padding from the parent ul */
@@ -1089,6 +1090,7 @@ ul, #myUL {
   /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
   .active {
 	display: block;
-	text-align: center;
+	text-align: Left;
+	text-indent: 20px;
 	font-weight: bold;
   }
