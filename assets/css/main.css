@@ -1062,11 +1062,17 @@ ul, #myUL {
 	font-weight: bolder;
 	text-align: left;
   }
-  
+
   /* Style the caret/arrow */
   .caret {
 	cursor: pointer; 
 	user-select: none; /* Prevent text selection */
+  }
+
+  .caret:hover {
+	COLOR: #ff7496; 
+	TEXT-DECORATION: none; 
+	font-weight: bold;
   }
   
   /* Create the caret/arrow with a unicode, and style it */
@@ -1086,11 +1092,15 @@ ul, #myUL {
   .nested {
 	display: none;
   }
+
+  /* .nested:hover {
+	  font-weight: bold;
+  } */
   
   /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
   .active {
 	display: block;
 	text-align: Left;
 	text-indent: 20px;
-	font-weight: bold;
+	font-weight: normal;
   }
