@@ -6,7 +6,7 @@ permalink: /about/
 
 <section id="main">
 	<header>
- 		<span class="avatar"><img src="{{site.baseurl}}/images/profile_photo.jpg" alt="" /></span>
+ 		<span class="avatar"><img class=responsiveavatar src="{{site.baseurl}}/images/profile_photo.jpg" alt="" /></span>
     </header>
 </section>
 
