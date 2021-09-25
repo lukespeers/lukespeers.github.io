@@ -12,4 +12,4 @@ Or reach me through any of my social channels.
 
 
 
-[jekyll-organization]: https://github.com/jekyll
+<!-- [jekyll-organization]: https://github.com/jekyll -->
